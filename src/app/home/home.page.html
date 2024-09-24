@@ -1,0 +1,45 @@
+<div class="home-page">
+  <div class="banner">
+    <div class="container">
+      <h1 class="logo-font">zigurat</h1>
+      <p>A place to share <i>your</i> knowledge</p>
+    </div>
+  </div>
+
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="feed-toggle">
+          <ul class="nav nav-pills outline-active">
+            <li class="nav-item">
+              <!-- <a> Your feed -->
+            </li>
+            <li class="nav-item">
+              <!-- <a> Global feed -->
+            </li>
+          </ul>
+        </div>
+
+        <!-- <article-list> -->
+      </div>
+      
+      <div class="col-md-3">
+        <div class="sidebar">
+          <p>Popular tags</p>
+          <div class="tag-list">
+            <!-- <a> list of tags thru ngFor -->
+          </div>
+          
+          <div [hidden]="tagsLoaded">
+            Loading tags...
+          </div>
+          <div [hidden]="!tagsLoaded || tags.length > 0">
+            No tags are here, yet.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

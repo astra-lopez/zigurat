@@ -1,0 +1,7 @@
+{
+  "name": "zigurat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
