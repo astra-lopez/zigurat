@@ -6,6 +6,7 @@ import { ProfilesService } from 'src/app/services/profiles.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
+  standalone: true,
   selector: 'app-follow-button',
   templateUrl: './follow-button.component.html',
   styleUrls: ['./follow-button.component.scss'],

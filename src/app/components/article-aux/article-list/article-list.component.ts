@@ -2,11 +2,15 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Article } from 'src/app/interfaces/article';
 import { ArticleListConf } from 'src/app/interfaces/article-list-conf';
 import { ArticlesService } from 'src/app/services/articles.service';
+import { ArticlePreviewComponent } from "../article-preview/article-preview.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-article-list',
   templateUrl: './article-list.component.html',
   styleUrls: ['./article-list.component.scss'],
+  imports: [ArticlePreviewComponent, CommonModule],
 })
 export class ArticleListComponent {
   query!: ArticleListConf;
@@ -26,6 +30,11 @@ export class ArticleListComponent {
       this.currentPage = 1;
       this.runQuery();
     }
+  }
+
+  setPageTo(pageNumber: number) {
+    this.currentPage = pageNumber;
+    this.runQuery();
   }
 
   runQuery() {
