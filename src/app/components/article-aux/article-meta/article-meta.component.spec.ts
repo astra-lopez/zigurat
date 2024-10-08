@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ArticleComponent } from './article.component';
+import { ArticleMetaComponent } from './article-meta.component';
 
-describe('ArticleComponent', () => {
-  let component: ArticleComponent;
-  let fixture: ComponentFixture<ArticleComponent>;
+describe('ArticleMetaComponent', () => {
+  let component: ArticleMetaComponent;
+  let fixture: ComponentFixture<ArticleMetaComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArticleComponent ],
+      declarations: [ ArticleMetaComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ArticleComponent);
+    fixture = TestBed.createComponent(ArticleMetaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
